@@ -32,8 +32,9 @@ jobs:
           path: ./dist
 
   deploy:
-    name: github-pages
-    url: ${{ steps.deployment.outputs.page_url }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
