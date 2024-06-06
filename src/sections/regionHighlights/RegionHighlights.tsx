@@ -20,5 +20,7 @@ export const RegionHighlights:FC = () => {
             </Button>
         </Row>
         <CarouselCard name={'Gullfoss Waterfall'} img={Nature2} time={'1h'} location={'Waterfall'} isCuratorsPick={true}/>
+        <CarouselCard name={'Gullfoss Waterfall'} img={Nature1} time={'1h'} location={'Waterfall'} isCuratorsPick={true}/>
+        <CarouselCard name={'Gullfoss Waterfall'} img={Nature3} time={'1h'} location={'Waterfall'} isCuratorsPick={true}/>
     </Space>
 }
