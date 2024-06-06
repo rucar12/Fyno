@@ -1,0 +1,42 @@
+.header {
+  padding: 20px 0;
+
+  .btn-group {
+    border-radius: 16px;
+    border: #e0e0e0 1px solid;
+
+    .ant-btn.ant-btn-default {
+      border: none;
+      border-right: #e0e0e0 1px solid;
+      box-shadow: none;
+      font-weight: 600;
+      font-size: 15px;
+
+      &:nth-child(1) {
+        border-radius: 16px 0 0 16px;
+        z-index: 3;
+      }
+    }
+
+    .ant-select, .ant-select-focused {
+      .ant-select-selector {
+        border: none;
+        border-radius: 16px;
+        box-shadow: none !important;
+      }
+
+      .ant-select-selection-item {
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+  .create {
+    border: #e0e0e0 1px solid;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
