@@ -36,9 +36,6 @@ jobs:
           name: production-files
           path: ./dist
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-
   deploy:
     environment:
       name: github-pages
@@ -48,6 +45,11 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
