@@ -1,0 +1,33 @@
+.overview {
+  position: relative;
+  border-radius: 24px;
+  align-items: flex-start;
+  height: 292px;
+  width: 100%;
+  border: #fff 1px solid;
+  overflow: hidden;
+
+  .row-pictures {
+    gap: 4px;
+  }
+
+  .all-photos {
+    position: absolute;
+    z-index: 10;
+    bottom: 12px;
+    right: 12px;
+    color: #fff;
+    padding: 0 12px 0 0;
+    border-radius: 40px;
+    backdrop-filter: blur(24px);
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    gap: 0;
+
+    &:hover {
+      color: #fff !important;
+      opacity: 0.9;
+    }
+  }
+}
