@@ -15,6 +15,7 @@
         font-size: 17px;
         line-height: 24px;
         font-weight: 600;
+        font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       }
 
       .trip-time {
@@ -23,6 +24,7 @@
         align-items: center;
         color: #606067;
         font-size: 13px;
+        font-family: 'SF-Pro-Text', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
         line-height: 18px;
       }
 
@@ -50,14 +52,35 @@
     font-size: 15px;
     line-height: 32px;
     font-weight: 600;
+    font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     display: flex;
     gap: 0;
+    transition: 0.3s all;
+
+    path, rect {
+      transition: 0.3s all;
+    }
 
     .stars {
       padding: 0 8px 0 10px;
+
       path {
         stroke: #000;
       }
+    }
+
+    &:hover, &:active {
+      path {
+        stroke: #4096ff;
+      }
+      rect {
+        fill: #4096ff;
+
+        &:nth-child(-n + 3) {
+          stroke: #4096ff;
+        }
+      }
+
     }
   }
 
