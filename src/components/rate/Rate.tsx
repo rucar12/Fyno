@@ -1,6 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import RateSVG from '../../assets/icons/rate.svg?react'
+import RateSVG from '../../../public/icons/rate.svg?react'
 import {FC} from "react";
 import {Space} from "antd";
 import './Rate.less'
