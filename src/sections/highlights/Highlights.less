@@ -5,7 +5,29 @@
   .share, .add-to-wishlist {
     font-size: 15px;
     font-weight: 600;
+    font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 32px;
+    transition: 0.3s all;
+
+    path {
+      transition: 0.3s all;
+    }
+  }
+
+  .share {
+    &:hover, &:active, &:focus {
+      path {
+        fill: #4096ff;
+      }
+    }
+  }
+
+  .add-to-wishlist {
+    &:hover, &:active, &:focus {
+      path {
+        stroke: #4096ff;
+      }
+    }
   }
 
   .comment-item {
@@ -13,17 +35,20 @@
     .author {
       font-size: 16px;
       font-weight: 600;
+      font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       line-height: 24px;
     }
 
     .position {
       font-size: 15px;
+      font-family: 'SF-Pro-Text', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       line-height: 21px;
       color: #636369;
     }
 
     .description {
       font-size: 16px;
+      font-family: 'SF-Pro-Text', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
       line-height: 24px;
     }
   }

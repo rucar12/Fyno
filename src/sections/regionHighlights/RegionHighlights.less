@@ -1,3 +1,116 @@
 .region-highlights {
+  width: 100%;
+
+  .ant-space-item:last-child {
+    max-width: 668px;
+  }
+
+  .daily-plan-container {
+    width: 100%;
+
+    .day-plan-row {
+      width: 100%;
+
+      .day-number {
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 600;
+        font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+      }
+
+      .trip-time {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: #606067;
+        font-size: 13px;
+        font-family: 'SF-Pro-Text', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 18px;
+      }
+
+      .action-btn {
+        padding: 12px 8px;
+        background: transparent;
+        border: none;
+
+        path {
+          transition: all 0.3s;
+        }
+
+        &:hover, &:active, &:focus {
+          path {
+            fill: #000;
+            fill-opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .plan-btn {
+    padding: 4px 15px 4px 0;
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'SF-Pro-Text-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    display: flex;
+    gap: 0;
+    transition: 0.3s all;
+
+    path, rect {
+      transition: 0.3s all;
+    }
+
+    .stars {
+      padding: 0 8px 0 10px;
+
+      path {
+        stroke: #000;
+      }
+    }
+
+    &:hover, &:active {
+      path {
+        stroke: #4096ff;
+      }
+      rect {
+        fill: #4096ff;
+
+        &:nth-child(-n + 3) {
+          stroke: #4096ff;
+        }
+      }
+
+    }
+  }
+
+  .arrow-container {
+    background: #fff;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    top: 122px;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &.left {
+      left: 12px;
+      rotate: 180deg;
+    }
+
+    &.right {
+      right: 12px;
+    }
+  }
 
 }
