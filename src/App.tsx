@@ -10,9 +10,9 @@ import GoldenCircle from "./sections/goldenCircle/GoldenCircle.tsx";
 import {RegionHighlights} from "./sections/regionHighlights/RegionHighlights.tsx";
 import {WhereStay} from "./sections/whereStay/WhereStay.tsx";
 
-import StarsSVG from './assets/icons/stars.svg?react';
-import DailyPlanSVG from './assets/icons/show-daily.svg?react';
-import BedSVG from './assets/icons/bed.svg?react';
+import StarsSVG from '/public/icons/stars.svg?react';
+import DailyPlanSVG from '/public/icons/show-daily.svg?react';
+import BedSVG from '/public/icons/bed.svg?react';
 import {useRef, useState} from "react";
 
 

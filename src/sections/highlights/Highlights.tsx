@@ -3,9 +3,9 @@
 import  './Highlights.less'
 import {FC} from "react";
 import {Button, Row, Space} from "antd";
-import ShareSVG from '../../assets/icons/share-small.svg?react';
-import WishlistSVG from '../../assets/icons/bookmark-small.svg?react';
-import AvaPNG from '../../assets/images/Ava.png';
+import ShareSVG from '/public/icons/share-small.svg?react';
+import WishlistSVG from '/public/icons/bookmark-small.svg?react';
+import AvaPNG from '/public/images/Ava.png';
 
 interface Props {
     name: string,

@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: './',
     plugins: [
         react(),
         svgr({
@@ -11,6 +12,4 @@ export default defineConfig({
             svgrOptions: { exportType: "default", ref: true, svgo: false, titleProp: true },
 
         })],
-    base: '/Fyno/'
-
 })

@@ -3,11 +3,11 @@ import {FC} from "react";
 import {Row, Space} from "antd";
 import Carousel from "react-multi-carousel";
 import {CarouselCard} from "../../components/carouselCard/CarouselCard.tsx";
-import Hotel2 from "../../assets/images/hotel2.png";
-import Hotel1 from "../../assets/images/hotel1.png";
-import Hotel3 from "../../assets/images/hotel3.png";
+import Hotel2 from "/public/images/hotel2.png";
+import Hotel1 from "/public/images/hotel1.png";
+import Hotel3 from "/public/images/hotel3.png";
 import {carouselResponsive} from "../../constants";
-import ArrowSVG from '../../assets/icons/arrow.svg?react';
+import ArrowSVG from '/public/icons/arrow.svg?react';
 import "react-multi-carousel/lib/styles.css";
 
 export const WhereStay:FC = () => {

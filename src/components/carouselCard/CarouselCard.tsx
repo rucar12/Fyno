@@ -3,7 +3,7 @@
 import './CarouselCard.less'
 import {FC, useState} from "react";
 import {Button, Card} from "antd";
-import SaveSVG from '../../assets/icons/save.svg?react'
+import SaveSVG from '/public/icons/save.svg?react'
 import {Rate} from "../rate/Rate.tsx";
 
 interface Props {
