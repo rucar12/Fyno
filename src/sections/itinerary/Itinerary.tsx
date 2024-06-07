@@ -1,9 +1,9 @@
 import  './Itinerary.less';
 import {FC} from "react";
 import {DatePicker, Row, Select, Space} from "antd";
-import PlaneSVG from '../../../public/icons/plane.svg?react'
-import CalendarSVG from '../../../public/icons/calendar.svg?react'
-import ProfileSVG from '../../../public/icons/profile.svg?react'
+import PlaneSVG from '/public/icons/plane.svg?react'
+import CalendarSVG from '/public/icons/calendar.svg?react'
+import ProfileSVG from '/public/icons/profile.svg?react'
 
 interface Props {
     name: string

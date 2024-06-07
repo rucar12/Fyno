@@ -2,14 +2,14 @@
 import './RegionHighlights.less'
 import {FC} from "react";
 import {CarouselCard} from "../../components/carouselCard/CarouselCard.tsx";
-import Nature1 from '../../../public/images/nature1.png';
-import Nature2 from '../../../public/images/nature2.png';
-import Nature3 from '../../../public/images/nature3.png';
-import ShowDailySVG from '../../../public/icons/show-daily.svg?react';
-import StarsSVG from '../../../public/icons/stars.svg?react';
-import ArrowSVG from '../../../public/icons/arrow.svg?react';
-import RoadSVG from '../../../public/icons/road.svg?react';
-import MoreSVG from '../../../public/icons/more.svg?react'
+import Nature1 from '/public/images/nature1.png';
+import Nature2 from '/public/images/nature2.png';
+import Nature3 from '/public/images/nature3.png';
+import ShowDailySVG from '/public/icons/show-daily.svg?react';
+import StarsSVG from '/public/icons/stars.svg?react';
+import ArrowSVG from '/public/icons/arrow.svg?react';
+import RoadSVG from '/public/icons/road.svg?react';
+import MoreSVG from '/public/icons/more.svg?react'
 import {Button, Row, Space} from "antd";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

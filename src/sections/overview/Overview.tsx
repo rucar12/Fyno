@@ -3,12 +3,12 @@
 import './Overview.less'
 import {FC} from "react";
 import {Button, Row, Space} from "antd";
-import GeneralPNG from '../../../public/images/general.png'
-import Secondary1PNG from '../../../public/images/secondary1.png'
-import Secondary2PNG from '../../../public/images/secondary2.png'
-import Secondary3PNG from '../../../public/images/secondary3.png'
-import Secondary4PNG from '../../../public/images/secondary4.png'
-import AllSVG from '../../../public/icons/all-icon.svg?react'
+import GeneralPNG from '/public/images/general.png'
+import Secondary1PNG from '/public/images/secondary1.png'
+import Secondary2PNG from '/public/images/secondary2.png'
+import Secondary3PNG from '/public/images/secondary3.png'
+import Secondary4PNG from '/public/images/secondary4.png'
+import AllSVG from '/public/icons/all-icon.svg?react'
 
 const pictures = [Secondary1PNG, Secondary2PNG, Secondary3PNG, Secondary4PNG]
 

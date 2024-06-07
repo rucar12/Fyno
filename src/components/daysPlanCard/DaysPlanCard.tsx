@@ -3,8 +3,8 @@
 import {FC} from "react";
 import {Button, Row, Space} from "antd";
 import {Rate} from "../rate/Rate.tsx";
-import MoreSVG from '../../../public/icons/more.svg?react'
-import DragSVG from '../../../public/icons/drag.svg?react'
+import MoreSVG from '/public/icons/more.svg?react'
+import DragSVG from '/public/icons/drag.svg?react'
 import './DaysPlanCard.less'
 
 interface Props {
