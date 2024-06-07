@@ -4,6 +4,7 @@ import './CarouselCard.less'
 import {FC, useState} from "react";
 import {Button, Card} from "antd";
 import SaveSVG from '../../assets/icons/save.svg?react'
+import {Rate} from "../rate/Rate.tsx";
 
 interface Props {
     name: string,
@@ -28,8 +29,8 @@ export const CarouselCard:FC<Props> = ({name, time, img, price, rate, location, 
         {!!rate && <Card.Meta title={name}/>}
         <Card.Meta
             className={'card-body'}
-            title={!!rate ? rate : name}
-            description={`${!!time ? time : price} · ${location}`}
+            title={!!rate ? <Rate max={10} current={rate}/> : name}
+            description={`${!!time ? time : `$${price}+`} · ${location}`}
         />
         {isCuratorsPick && <Button className={'picked'} type={"text"}>
             Curator's pick

@@ -6,10 +6,11 @@ interface Props {
     info: {
         label: string,
         value: string,
-    }[]
+    }[],
+    scroll: () => void
 }
 
-export const TripInfo:FC<Props> = ({info}) => {
+export const TripInfo:FC<Props> = ({info, scroll}) => {
 
     return <div className={'tripInfo'}>
         <Row justify={"space-between"} align={"middle"}>
@@ -21,7 +22,7 @@ export const TripInfo:FC<Props> = ({info}) => {
                     </Row>
                 })}
             </Space>
-            <Button className={'view'} type={"text"}>
+            <Button className={'view'} type={"text"} onClick={scroll}>
                 View itinerary
             </Button>
         </Row>
